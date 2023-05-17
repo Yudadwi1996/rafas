@@ -37,7 +37,7 @@ export default function Header() {
         <div className="max-w-5xl mx-auto flex flex-wrap p-1 flex-col md:flex-row">
           <div className="flex flex-row items-center justify-between p-3 md:p-1">
             <div className="sm:mb-0 flex flex-row">
-              <div className="h-14 w-10 self-center mr-2 mt-5">
+              <div className="h-14 w-10 self-center mr-2 lg:mt-5">
                 <Image
                   alt="logo"
                   width="10px"
@@ -47,7 +47,7 @@ export default function Header() {
                   // src="https://csscomps.com/images/csscomps.png"
                 />
               </div>
-              <div className="mt-6">
+              <div className="lg:mt-6">
                 <Link
                   href="/"
                   className="text-2xl no-underline uppercase text-[#E64936] hover:text-blue-dark font-sans font-bold"

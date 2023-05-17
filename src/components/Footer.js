@@ -17,14 +17,14 @@ const introHeaderVariants = {
 export default function Footer() {
   return (
     <>
-      <footer className="text-gray-600 body-font border-t">
+      <footer className="text-gray-600 body-font border-t mt-10">
         <motion.header
           initial="hide"
           whileInView="show"
           exit="hide"
           variants={introHeaderVariants}
         >
-          <div className="container px-5 py-8 flex sm:mx-auto sm:mb-2  ">
+          <div className="container px-5 py-8 flex sm:mx-auto sm:mb-2 mt-16  ">
             <div className="p-2 sm:w-1/2 w-full ">
               <h2 className="font-medium  title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left">
                 PRODUCTS AND SOLUTIONS
