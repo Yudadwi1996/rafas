@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import HeroLogo from "../assets/hero.webp";
+import HeroLog from "../assets/hero.png";
 import { motion } from "framer-motion";
 import AnimatedTextCharacter from "./AnimatedText";
 
@@ -46,13 +47,14 @@ const AnimatedTextWord = ({ text }) => {
       style={{
         overflow: "hidden",
         // display: "flex",
-        fontSize: "2rem",
+        // fontSize: "2rem",
         textAlign: "center",
-        marginTop: "2rem",
+        // marginTop: "9rem",
       }}
       variants={container}
       initial="hidden"
       animate="visible"
+      className="lg:text-4xl md:text-3xl  text-xl mt-24"
     >
       {letters.map((letter, index) => (
         <motion.span variants={child} key={index}>
@@ -70,17 +72,29 @@ export default function Hero() {
   return (
     <>
       <section className="hero relative">
-        <Image
-          width=""
-          height=""
-          src={HeroLogo}
-          alt="houses on the water"
-          className="w-full bg-black opacity-80"
-          style={{ maxWidth: "100%" }}
-        />
+        {currentRoute !== "/" ? (
+          <Image
+            width=""
+            height=""
+            src={HeroLog}
+            alt="houses on the water"
+            className="w-full bg-black opacity-80"
+            style={{ maxWidth: "100%" }}
+          />
+        ) : (
+          <Image
+            width=""
+            height=""
+            src={HeroLogo}
+            alt="houses on the water"
+            className="w-full bg-black opacity-80"
+            style={{ maxWidth: "100%" }}
+          />
+        )}
+
         {currentRoute === "/" && (
           <>
-            {/* <span className="absolute text-[#E64936] text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            {/* <span className="absolute text-white text-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <AnimatedTextCharacter text="WIJAYA KARYA – BPM" />
 
               <p className="text-base text-center mt-2">
@@ -88,20 +102,20 @@ export default function Hero() {
                 Process Modeling
               </p>
             </span> */}
-            {/* <div className="absolute text-[#E64936] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            {/* <div className="absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <AnimatedTextCharacter text="WIJAYA KARYA – BPM" />
               <p className="text-base text-center mt-2">
                 We bring solution for construction business throught Business
                 Process Modeling
               </p>
             </div> */}
-            {/* <div className=" absolute text-[#E64936] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            {/* <div className=" absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               {" "}
               <AnimatedTextCharacter text="WIJAYA KARYA – BPM" />
             </div> */}
-            <div className="absolute text-[#E64936] top-1/2 left-1/2   -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute text-white top-1/2 left-1/2   -translate-x-1/2 -translate-y-1/2">
               <AnimatedTextWord text="WIJAYA KARYA - BPM" />
-              <p className="text-base text-center mt-2">
+              <p className="lg:text-base text-sm text-center mt-2 mb-5">
                 We bring solution for construction business throught Business
                 Process Modeling
               </p>
@@ -111,7 +125,7 @@ export default function Hero() {
         {currentRoute === "/vision" && (
           <>
             {" "}
-            <div className="absolute text-[#E64936] top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute text-white top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2">
               <AnimatedTextCharacter text="WHO WE ARE" />
             </div>
           </>
@@ -120,7 +134,7 @@ export default function Hero() {
         {currentRoute === "/product" && (
           <>
             {" "}
-            <div className="absolute text-[#E64936] top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute text-white top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2">
               <AnimatedTextCharacter text="WHAT WE DO" />
             </div>
           </>
@@ -128,7 +142,7 @@ export default function Hero() {
         {currentRoute === "/dinamika" && (
           <>
             {" "}
-            <div className="absolute text-[#E64936] top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute text-white top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2">
               <AnimatedTextCharacter text="WHY RAFAS" />
             </div>
           </>
@@ -136,7 +150,7 @@ export default function Hero() {
         {currentRoute === "/customer" && (
           <>
             {" "}
-            <div className="absolute text-[#E64936] top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute text-white top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2">
               <AnimatedTextCharacter text="CUSTOMERS" />
             </div>
           </>
@@ -144,7 +158,7 @@ export default function Hero() {
         {currentRoute === "/gallery" && (
           <>
             {" "}
-            <div className="absolute text-[#E64936] top-1/2   left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute text-white top-1/2   left-1/2 -translate-x-1/2 -translate-y-1/2">
               <AnimatedTextCharacter text="GALLERY" />
             </div>
           </>
@@ -152,7 +166,7 @@ export default function Hero() {
         {currentRoute === "/contact" && (
           <>
             {" "}
-            <div className="absolute text-[#E64936] top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute text-white top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2">
               <AnimatedTextCharacter text="CONTACT" />
             </div>
           </>
@@ -160,7 +174,7 @@ export default function Hero() {
         {currentRoute === "/career" && (
           <>
             {" "}
-            <div className="absolute text-[#E64936] top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute text-white top-1/2  left-1/2 -translate-x-1/2 -translate-y-1/2">
               <AnimatedTextCharacter text="CAREER" />
             </div>
           </>

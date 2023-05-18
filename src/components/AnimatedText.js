@@ -40,10 +40,11 @@ const AnimatedTextCharacter = ({ text }) => {
 
   return (
     <motion.div
-      style={{ overflow: "hidden", display: "flex", fontSize: "3rem" }}
+      style={{ overflow: "hidden", display: "flex" }}
       variants={container}
       initial="hidden"
       animate="visible"
+      className="lg:text-4xl md:text-3xl  text-xl mt-24"
     >
       {letters.map((letter, index) => (
         <motion.span variants={child} key={index}>

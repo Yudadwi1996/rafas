@@ -51,7 +51,7 @@ const Product = () => {
       <Hero />
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-5 mx-auto">
-          <div className="flex flex-col text-center w-full mb-10">
+          <div className="flex flex-col text-center w-full mb-5">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
               PRODUCTS AND SOLUTIONS
             </h1>
@@ -453,8 +453,8 @@ const Product = () => {
                   all hospital-related activities, ranging from standard service
                   systems such as patient data collection, service, medical
                   records, medical support, pharmacy, cashier & billing services
-                  to managerial reports and information services. PT DINAMIKA
-                  VISUAL KREASINDO provides the best solution for hospital
+                  to managerial reports and information services. PT. RAFAS
+                  DIGITAL KREASI provides the best solution for hospital
                   efficiency
                 </p>
               </div>

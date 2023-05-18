@@ -1,6 +1,8 @@
 import Image from "next/image";
 import No from "../assets/no.png";
 import { motion } from "framer-motion";
+import BgTeam from "../assets/team1.png";
+import BgTeam1 from "../assets/team2.png";
 
 const introHeaderVariants = {
   hide: {
@@ -36,14 +38,14 @@ export default function Team() {
               </p>
             </div>
             <div className="flex flex-wrap -m-4 justify-center">
-              <div className="p-4 lg:w-1/2 md:w-1/2">
+              <div className="p-4 lg:w-1/4 md:w-1/2">
                 <div className="h-full flex flex-col items-center text-center">
                   <Image
-                    width="720px"
-                    height="400px"
+                    width="200px"
+                    height="300px"
                     alt="team"
-                    className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                    src={No}
+                    className="flex-shrink-0 rounded-lg w-full h-90 object-cover object-center mb-4"
+                    src={BgTeam1}
                   />
                   <div className="w-full">
                     <h2 className="title-font font-medium text-lg text-gray-900">
@@ -94,14 +96,14 @@ export default function Team() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 lg:w-1/2 md:w-1/2">
+              <div className="p-4 lg:w-1/4 md:w-1/2">
                 <div className="h-full flex flex-col items-center text-center">
                   <Image
                     alt="team"
-                    width="721px"
-                    height="401px"
-                    className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
-                    src={No}
+                    width="201px"
+                    height="201px"
+                    className="flex-shrink-0 rounded-lg w-full h-90 object-cover object-center mb-4"
+                    src={BgTeam}
                   />
                   <div className="w-full">
                     <h2 className="title-font font-medium text-lg text-gray-900">

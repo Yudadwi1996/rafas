@@ -15,7 +15,7 @@ export default function gallery() {
       <Header />
 
       <Hero />
-      <div className="hidden md:block">
+      {/* <div className="hidden md:block">
         {" "}
         <div className="grid  grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4 relative -mt-16">
           <div className="grid gap-4 mx-auto ">
@@ -124,7 +124,7 @@ export default function gallery() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="p-14">
         <h1 className="title-font uppercase text-lg font-extrabold text-[#E64936] mb-3">

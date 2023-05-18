@@ -26,9 +26,9 @@ export default function Home() {
       <ScrollToTop smooth />
       <Navbar />
       <Hero />
-
-      <Service />
       <About />
+      <Service />
+
       <Partner />
       <Value />
       <Team />

@@ -109,7 +109,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              <div className="row-span-full col-start-1 col-span-5 self-center  p-4 text-black bg-[#E64936] rounded-lg">
+              <div className="row-span-full col-start-1 col-span-5 self-center  p-4 text-black bg-[#E64936] rounded-lg mr-20">
                 <h1 className="text-2xl font-bold py-3">
                   Please get in touch with us for detailed information
                 </h1>

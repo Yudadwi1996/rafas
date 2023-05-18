@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const introHeaderVariants = {
   hide: {
@@ -30,7 +31,7 @@ export default function Footer() {
                 PRODUCTS AND SOLUTIONS
               </h2>
               <nav className="flex flex-col sm:items-start sm:text-left text-center item-center  -mb-1 space-y-2.5">
-                <span>
+                <Link href="/product">
                   <span className="bg-[#E64936] text-black w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                     <svg
                       fill="none"
@@ -45,8 +46,8 @@ export default function Footer() {
                     </svg>
                   </span>
                   Insfrastructure as a services
-                </span>
-                <span>
+                </Link>
+                <Link href="/product">
                   <span className="bg-[#E64936] text-black w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                     <svg
                       fill="none"
@@ -61,8 +62,8 @@ export default function Footer() {
                     </svg>
                   </span>
                   Digital Marketing
-                </span>
-                <span>
+                </Link>
+                <Link href="/product">
                   <span className="bg-[#E64936] text-black w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                     <svg
                       fill="none"
@@ -77,8 +78,8 @@ export default function Footer() {
                     </svg>
                   </span>
                   Middleware
-                </span>
-                <span>
+                </Link>
+                <Link href="/product">
                   <span className="bg-[#E64936] text-black w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                     <svg
                       fill="none"
@@ -93,8 +94,8 @@ export default function Footer() {
                     </svg>
                   </span>
                   Data Warehouse and Business Intelligent Solution
-                </span>
-                <span>
+                </Link>
+                <Link href="/product">
                   <span className="bg-[#E64936] text-black w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                     <svg
                       fill="none"
@@ -109,8 +110,8 @@ export default function Footer() {
                     </svg>
                   </span>
                   Human Capital Management
-                </span>
-                <span>
+                </Link>
+                <Link href="/product">
                   <span className="bg-[#E64936] text-black w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                     <svg
                       fill="none"
@@ -125,7 +126,7 @@ export default function Footer() {
                     </svg>
                   </span>
                   Hospital Integrated Information System
-                </span>
+                </Link>
               </nav>
             </div>
             <div className="p-2 sm:w-1/2 w-full">
@@ -133,7 +134,7 @@ export default function Footer() {
                 SERVICES
               </h2>
               <nav className="flex flex-col text-center sm:text-left  p-2 sm:w-1/2 w-full -mb-1 space-y-2.5">
-                <span>
+                <Link href="/product">
                   <span className="bg-[#E64936] text-black w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                     <svg
                       fill="none"
@@ -148,8 +149,8 @@ export default function Footer() {
                     </svg>
                   </span>
                   Implemetation Services
-                </span>
-                <span>
+                </Link>
+                <Link href="/product">
                   <span className="bg-[#E64936] text-black w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                     <svg
                       fill="none"
@@ -164,8 +165,8 @@ export default function Footer() {
                     </svg>
                   </span>
                   Managed and Maintenance Support
-                </span>
-                <span>
+                </Link>
+                <Link href="/product">
                   <span className="bg-[#E64936] text-black w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                     <svg
                       fill="none"
@@ -180,7 +181,7 @@ export default function Footer() {
                     </svg>
                   </span>
                   IT Consultant
-                </span>
+                </Link>
               </nav>
             </div>
           </div>
