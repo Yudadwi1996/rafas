@@ -122,9 +122,9 @@ export default function Header() {
                 what we do
               </Link>
               <Link
-                href="/dinamika"
+                href="/rafas"
                 className={
-                  currentRoute === "/dinamika"
+                  currentRoute === "/rafas"
                     ? "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
                     : "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
                 }

@@ -94,8 +94,8 @@ export default function Footer() {
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
                     </span>
-                    Data Warehouse and Business Intelligent{" "}
-                    <span className="ml-6">Solution</span>
+                    Data Warehouse and Business{" "}
+                    <span className="ml-6"> Intelligent Solution</span>
                   </Link>
                   <Link href="/product" className="no-underline text-black">
                     <span className="bg-[#E64936] text-black w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
