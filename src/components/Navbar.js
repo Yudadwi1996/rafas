@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Logo from "../assets/logo_r.png";
+import Logo from "../assets/logo_ra.png";
 
 export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -30,11 +30,11 @@ export default function Header() {
         className="fixed top-0 w-full  z-50  w-full pt-1"
         style={{
           backgroundColor: navbarOpen === true ? "#272340" : navColor,
-          height: navbarOpen === true ? navSize : "5rem",
+          height: navbarOpen === true ? navSize : "7rem",
           transition: "all 1s",
         }}
       >
-        <div className="max-w-5xl mx-auto flex flex-wrap p-1 flex-col md:flex-row">
+        <div className="mx-auto flex flex-wrap p-1 flex-col md:flex-row">
           <div className="flex flex-row items-center justify-between p-3 md:p-1 ">
             <div className="sm:mb-0 flex flex-row">
               <div className="h-14 w-14 self-center mr-2 lg:mt-3">
@@ -43,14 +43,14 @@ export default function Header() {
                   width="10px"
                   height="10px"
                   src={Logo}
-                  className="self-center lg:w-14 lg:h-18 mb-10"
+                  className="self-center lg:w-14 lg:h-18 mb-10 "
                   // src="https://csscomps.com/images/csscomps.png"
                 />
               </div>
-              <div className="lg:mt-4 mt-2">
+              <div className="lg:mt-10 mt-3">
                 <Link
                   href="/"
-                  className="lg:text-4xl text-2xl no-underline uppercase text-[#E64936] hover:text-blue-dark font-sans font-extrabold"
+                  className="lg:text-4xl text-2xl no-underline uppercase text-[#E64936]  font-sans font-extrabold"
                 >
                   Rafas
                 </Link>
@@ -94,8 +94,8 @@ export default function Header() {
                 // className="mr-4 pr-2 text-sm uppercase cursor-pointer text-gray-300 hover:text-white font-semibold tr04"
                 className={
                   currentRoute === "/"
-                    ? "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
-                    : "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
+                    ? "mr-4 pr-2 text-sm no-underline uppercase cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
+                    : "mr-4 pr-2 text-sm no-underline uppercase cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
                 }
               >
                 Home
@@ -105,8 +105,8 @@ export default function Header() {
                 href="/vision"
                 className={
                   currentRoute === "/vision"
-                    ? "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
-                    : " mr-4 pr-2 text-sm uppercase cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
+                    ? "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
+                    : " mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
                 }
               >
                 who we are
@@ -115,8 +115,8 @@ export default function Header() {
                 href="/product"
                 className={
                   currentRoute === "/product"
-                    ? "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
-                    : " mr-4 pr-2 text-sm uppercase cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
+                    ? "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
+                    : " mr-4 pr-2 text-sm uppercase no-underline  cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
                 }
               >
                 what we do
@@ -125,8 +125,8 @@ export default function Header() {
                 href="/dinamika"
                 className={
                   currentRoute === "/dinamika"
-                    ? "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
-                    : "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
+                    ? "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
+                    : "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
                 }
               >
                 why rafas
@@ -135,8 +135,8 @@ export default function Header() {
                 href="customer"
                 className={
                   currentRoute === "/customer"
-                    ? "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
-                    : "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
+                    ? "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
+                    : "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
                 }
               >
                 customers
@@ -145,8 +145,8 @@ export default function Header() {
                 href="/gallery"
                 className={
                   currentRoute === "/gallery"
-                    ? "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
-                    : "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
+                    ? "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
+                    : "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
                 }
               >
                 gallery
@@ -155,8 +155,8 @@ export default function Header() {
                 href="/contact"
                 className={
                   currentRoute === "/contact"
-                    ? "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
-                    : "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
+                    ? "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
+                    : "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
                 }
               >
                 contact
@@ -166,8 +166,8 @@ export default function Header() {
                 href="/career"
                 className={
                   currentRoute === "/career"
-                    ? "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
-                    : "mr-4 pr-2 text-sm uppercase cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
+                    ? "mr-4 pr-2 text-sm uppercase no-underlinecursor-pointer text-[#E64936] border-b-2 border-[#E64936] p-1 hover:text-[#E64936] font-semibold tr04"
+                    : "mr-4 pr-2 text-sm uppercase no-underline cursor-pointer text-[#C0C0C0] hover:text-white font-semibold tr04"
                 }
               >
                 career

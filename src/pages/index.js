@@ -12,6 +12,8 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollToTop from "react-scroll-to-top";
 
+import SliderBoostrap from "@/components/SliderBosstrap";
+
 export default function Home() {
   return (
     <div>
@@ -25,7 +27,9 @@ export default function Home() {
       </Head>
       <ScrollToTop smooth />
       <Navbar />
-      <Hero />
+
+      <SliderBoostrap />
+      {/* <Hero /> */}
       <About />
       <Service />
 

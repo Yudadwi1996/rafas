@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Logo from "../assets/about.webp";
 import { motion } from "framer-motion";
 
 const introHeaderVariants = {
@@ -19,7 +17,7 @@ const introHeaderVariants = {
 export default function About() {
   return (
     <>
-      <section className="text-gray-600 body-font  bg-[#F9FBFE]">
+      {/* <section className="text-gray-600 body-font  bg-[#F9FBFE]">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="flex flex-wrap -mx-1  mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
             <motion.header
@@ -138,6 +136,132 @@ export default function About() {
                 style={{ width: "80%" }}
               >
                 80%
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      <section className="text-gray-600 body-font overflow-hidden">
+        <div className="container px-5 py-10 mx-auto">
+          <div className="flex flex-wrap -m-12">
+            <div className="p-10 md:w-1/2 flex flex-col items-start">
+              <motion.header
+                initial="hide"
+                whileInView="show"
+                exit="hide"
+                variants={introHeaderVariants}
+              >
+                <h1 className="text-3xl font-extrabold tracking-tight leading-tight mb-1 text-gray-900">
+                  ABOUT RAFAS
+                </h1>
+              </motion.header>
+
+              <motion.header
+                initial="hide"
+                whileInView="show"
+                exit="hide"
+                variants={introHeaderVariants}
+                className="leading-relaxed"
+              >
+                In a life that is constantly evolving and growing in complexity,
+                information technology is needed to meet the challenges of these
+                developments. Information technology has the main objective of
+                simplifying human activities and giving a solution for every
+                problem in life. We built PT. RAFAS DIGITAL KREASI based on
+                enthusiasm and a strong commitment among its founders to
+                providing solutions to all our client`s business activities. We
+                offer a solution in the form of information technology, which
+                will be very useful and the best solution to any problem in the
+                growing complexity of any existing business.
+              </motion.header>
+            </div>
+            <div className="lg:w-1/2 sm:w-1/3 p-4 w-full rounded-lg overflow-hidden ">
+              <motion.header
+                initial="hide"
+                whileInView="show"
+                exit="hide"
+                variants={introHeaderVariants}
+                className="mb-1 mt-4 text-base font-medium"
+              >
+                Hardware
+              </motion.header>
+              <div className="w-full bg-gray-200 rounded-full p-0.5 mb-4 ">
+                <div
+                  className="bg-[#E64936] p-0.5 text-xs font-medium text-blue-100 text-center  rounded-full "
+                  style={{ width: "10%" }}
+                >
+                  10%
+                </div>
+              </div>
+              <motion.header
+                initial="hide"
+                whileInView="show"
+                exit="hide"
+                variants={introHeaderVariants}
+                className="mb-1 text-base font-medium "
+              >
+                Network Solution
+              </motion.header>
+              <div className="w-full bg-gray-200 rounded-full p-0.5 mb-4 ">
+                <div
+                  className="bg-[#E64936] p-0.5 text-xs font-medium text-blue-100 text-center  rounded-full "
+                  style={{ width: "10%" }}
+                >
+                  10%
+                </div>
+              </div>
+
+              <motion.header
+                initial="hide"
+                whileInView="show"
+                exit="hide"
+                variants={introHeaderVariants}
+                className="mb-1 text-base font-medium "
+              >
+                IT Consultant
+              </motion.header>
+              <div className="w-full bg-gray-200 rounded-full p-0.5 mb-4 ">
+                <div
+                  className="bg-[#E64936] p-0.5 text-xs font-medium text-blue-100 text-center  rounded-full "
+                  style={{ width: "80%" }}
+                >
+                  80%
+                </div>
+              </div>
+
+              <motion.header
+                initial="hide"
+                whileInView="show"
+                exit="hide"
+                variants={introHeaderVariants}
+                className="mb-1 text-base font-medium "
+              >
+                System Intregrator
+              </motion.header>
+              <div className="w-full bg-gray-200 rounded-full p-0.5 mb-4 ">
+                <div
+                  className="bg-[#E64936] p-0.5 text-xs font-medium text-blue-100 text-center  rounded-full "
+                  style={{ width: "80%" }}
+                >
+                  80%
+                </div>
+              </div>
+              <motion.header
+                initial="hide"
+                whileInView="show"
+                exit="hide"
+                variants={introHeaderVariants}
+                className="mb-1 text-base font-medium "
+              >
+                System Development
+              </motion.header>
+              <div className="w-full bg-gray-200 rounded-full p-0.5 mb-4 ">
+                <div
+                  className="bg-[#E64936] p-0.5 text-xs font-medium text-blue-100 text-center  rounded-full "
+                  style={{ width: "80%" }}
+                >
+                  80%
+                </div>
               </div>
             </div>
           </div>

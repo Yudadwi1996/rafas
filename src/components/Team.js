@@ -29,8 +29,8 @@ export default function Team() {
             exit="hide"
             variants={introHeaderVariants}
           >
-            <div className="flex flex-col text-center w-full mb-20">
-              <h1 className="text-2xl font-medium title-font mb-4 text-gray-900">
+            <div className="flex flex-col text-center w-full ">
+              <h1 className="text-3xl font-extrabold tracking-tight leading-tight mb-1 text-gray-900">
                 RAFAS TEAM
               </h1>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -51,7 +51,7 @@ export default function Team() {
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       Yuda Dwisaksono
                     </h2>
-                    <h3 className="text-gray-500 mb-3">Komisaris</h3>
+                    <h3 className="text-gray-500 mb-3 text-sm">Komisaris</h3>
                     <span className="inline-flex">
                       <a className="text-gray-500">
                         <svg
@@ -109,7 +109,9 @@ export default function Team() {
                     <h2 className="title-font font-medium text-lg text-gray-900">
                       Aisyah Amini Br Pasaribu
                     </h2>
-                    <h3 className="text-gray-500 mb-3">Direktur Utama</h3>
+                    <h3 className="text-gray-500 mb-3 text-sm">
+                      Direktur Utama
+                    </h3>
                     <span className="inline-flex">
                       <a className="text-gray-500">
                         <svg

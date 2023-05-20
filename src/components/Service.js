@@ -32,8 +32,8 @@ export default function Service() {
           variants={introHeaderVariants}
         >
           <div className="container px-5 py-5 mx-auto ">
-            <div className="flex flex-col text-center w-full mb-20">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-2">
+            <div className="flex flex-col text-center w-full mb-4">
+              <h1 className="text-3xl font-extrabold tracking-tight leading-tight mb-1 text-gray-900">
                 RAFAS SERVICES
               </h1>
               <h2 className="text-lg  tracking-widest font-medium title-font mb-1">
@@ -41,8 +41,8 @@ export default function Service() {
               </h2>
             </div>
             <div className="flex flex-wrap -m-4">
-              <div className="p-4 md:w-1/4 flex flex-col text-center items-center ">
-                <div className="rounded-lg h-full bg-gray-100 p-8 ">
+              <div className="p-2 md:w-1/4 flex flex-col text-center items-center ">
+                <div className="rounded-lg h-full bg-gray-100 p-3 ">
                   {" "}
                   <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                     <Image
@@ -63,8 +63,8 @@ export default function Service() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 md:w-1/4 flex flex-col text-center items-center ">
-                <div className="rounded-lg h-full bg-gray-100 p-8 ">
+              <div className="p-2 md:w-1/4 flex flex-col text-center items-center ">
+                <div className="rounded-lg h-full bg-gray-100 p-3 ">
                   {" "}
                   <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                     <Image width="20px" height="20px" alt="" src={MiddleLogo} />
@@ -80,8 +80,8 @@ export default function Service() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 md:w-1/4 flex flex-col text-center items-center ">
-                <div className="rounded-lg h-full bg-gray-100 p-8 ">
+              <div className="p-2 md:w-1/4 flex flex-col text-center items-center ">
+                <div className="rounded-lg h-full bg-gray-100 p-3 ">
                   {" "}
                   <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                     <Image width="20px" height="20px" alt="" src={ItLogo} />
@@ -97,8 +97,8 @@ export default function Service() {
                   </div>
                 </div>
               </div>
-              <div className="p-4 md:w-1/4 flex flex-col text-center items-center ">
-                <div className="rounded-lg h-full bg-gray-100 p-8 ">
+              <div className="p-2 md:w-1/4 flex flex-col text-center items-center ">
+                <div className="rounded-lg h-full bg-gray-100 p-3 ">
                   {" "}
                   <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
                     <Image
